@@ -1,4 +1,5 @@
 import React from 'react';
+import winner from '../winner.png';
 
 /**
  * Componente que renderiza un proyecto en particular como una card.
@@ -10,8 +11,9 @@ export const RepoGridItem = (proj) => {
                 <div className="card-body">
                     <h5 className="card-title text-center">Id: {proj.id} &nbsp;
                         {proj.winner &&
-                            <img src={process.env.PUBLIC_URL + '/images/winner.png'} alt="Ganador" title="Proyecto ganador"></img>
+                            <img src={winner} alt="Ganador" title="Proyecto ganador"></img>
                         }
+                        
 
                     </h5>
                     <p className="card-text"><strong>Proyecto:</strong> {proj.titulo}. <br />
